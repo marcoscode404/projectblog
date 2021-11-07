@@ -344,12 +344,24 @@ article .news_comments{
 
 article .news_thumnail{
     margin-top: 30px ;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    background-color: rgb(64, 7, 75);
+    
 }
 
+article .news_thumnail:hover {
+    border: 1px solid rgb(37, 167, 54);
+}   
+
+
+
 article .news_thumnail img{
-    width: 100%;
+    width: 99%;
     height: 200px;
-    border-radius: 10px;
+    margin: 2px;
+    
 }
 
 
