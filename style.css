@@ -467,7 +467,7 @@ footer .widget_title_text {
         
     }
     .banner_headline{
-        
+        background-color: red;
         width: 90vw;
         overflow: hidden;
         margin: auto;
@@ -512,12 +512,15 @@ footer .widget_title_text {
 
     #geral section,
     #geral aside{
-        padding: 30px;
+        margin: 15px;
+        
+       
     }
 
     /* FOOTER */
     .footer_menu{
         flex-direction: column;
+        width: 100%;
     }
 
     .footer_area{
@@ -562,4 +565,31 @@ footer .widget_title_text {
         justify-content: space-around;
         
     }
+}
+
+@media (max-width: 350px) {
+    #geral section,
+    #geral aside{
+        margin: 20px;
+        
+       
+    }
+    article .news_thumnail{
+        margin-top: 30px ;
+        width: 100%;
+        height: 400px;
+        
+        background-color: rgb(64, 7, 75);
+        
+    }
+    article .news_thumnail img{
+        margin-top: 30px ;
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+        background-color: rgb(64, 7, 75);
+        
+    }
+    
+    
 }
