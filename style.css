@@ -205,13 +205,13 @@ nav a:hover{
 
 .news {
     width: 100%;
-    height: 230px;
+    height: 100%;
     
     margin: 75px 0 10px;
 }
 .news img {
     width: 100%;
-    
+    height: 250px;
 }
 
 
