@@ -461,7 +461,7 @@ footer .widget_title_text {
 }
 
 /* responsividade */
-@media (max-width:600px){
+@media (max-width:734px){
     .socialMidia{
         display: none;
         
