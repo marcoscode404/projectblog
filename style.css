@@ -187,24 +187,36 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     background-color:  #8257e5;
-    width: 100%;
-    margin: 10px;
+    width: auto;
+    height: 600px;
 }
 
 .quemsoueu .name{
     width: 100%;
-    /* background-color: red; */
+    height: 400px;
+    
+    gap: 40px;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    align-items: center;    
+    justify-content: space-around;
 }
-
-.quemsoueu .name h2 {
-
+.quemsoueu .name .texto{
+    margin: 40px 30px;
+    min-width: 10rem;
+    border-top: 1px solid rgb(221, 215, 215);
+    border-right: 1px solid rgb(221, 215, 215);
+    border-bottom: 1px solid rgb(221, 215, 215);
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.3rem;
 }
 
 .quemsoueu .name img {
+    margin-top: 5px;
     width: 15rem;
+    height: 15rem;
+    border: 2px solid rgb(230, 255, 2);
     border-radius: 50%;
 }
 
@@ -233,12 +245,13 @@ nav a:hover{
 .news {
     width: 100%;
     height: 100%;
-    
+   
     margin: 75px 0 10px;
 }
 .news img {
     width: 100%;
     height: 250px;
+    
 }
 
 
@@ -367,11 +380,6 @@ article .news_thumnail{
     width: 100%;
     height: 450px;
     
-<<<<<<< Updated upstream
-   
-=======
-    
->>>>>>> Stashed changes
     
 }
 
@@ -413,8 +421,67 @@ article .news_resume{
 }
 
 
+/* form de contato */
+    .form {
+        width: 100%;
+        background-color: #8257e5;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .form .formulario{
+        width: 500px;
+        height: 80%;
+        background-color: #2d3f47b7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+    }
+    .form .formulario input {
+        width: 400px;
+        height: 50px;
+        border-radius: 8px;
+        
+        padding: 10px;
+        margin-bottom: 7px;
+        outline: unset;
+        border: none;
+        outline: unset;
+        color: #8257e5;
+        font-size: 1rem;
 
+    }
+    .form .formulario textarea {
+        outline: unset;
+        padding: 10px;
+        width: 400px;
+        border: none;
+        outline: none;
+        max-width: 400px;
+        min-width: 400px;
+        max-height: 180px;
+        color: #8257e5;
+        font-size: 1rem;
+        border-radius: 8px;
+        margin-top: 0px;
+        
+    }
 
+    .form .formulario button {
+        width: 80%;
+        padding: 15px;
+        background-color: rgb(52, 214, 101);
+        border: none;
+        border-radius: 8px;
+        margin-top: 10px;
+        color: #FFF;
+    }
+/* /form de contato */
 
 footer{
     display: flex;
@@ -476,20 +543,7 @@ footer .widget_title_text {
 
 }
 
-.menuMobile{
-    display: none;
-    width: 40px;
-    height: 40px;
-    
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 0px;
-}
 
-.mm_line{
-    height: 3px;
-    background-color: rgb(61, 156, 52);
-}
 
 /* responsividade */
 @media (max-width:734px){
@@ -547,9 +601,31 @@ footer .widget_title_text {
         
        
     }
+
+    .quemsoueu{
+        height: 1000px;
+    }
+    .quemsoueu .name{
+        flex-direction: column;
+        
+    }
+
+    .form .formulario {
+        min-width: 200px;
+    }
+    .form input {
+        width: 100px;
+    }
+
+    /* div laterais */
+    .news{
+        max-width: 300px;
+    }
+
     .caixas{
         flex-direction: column;
         width: 100%;
+        max-width: 300px;
 
     }
     .caixas1{
@@ -589,7 +665,7 @@ footer .widget_title_text {
 
     header{
        
-        height: auto; /*aumenta o tamanho do header*/
+        height: 100px; /*aumenta o tamanho do header*/
        
         
     }
@@ -598,12 +674,7 @@ footer .widget_title_text {
         padding-left: 20px;
     }
 
-    .menuMobile{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        
-    }
+    
 }
 
 @media (max-width: 350px) {
@@ -618,21 +689,17 @@ footer .widget_title_text {
         width: 100%;
         height: 400px;
         
-<<<<<<< Updated upstream
         
-=======
        
->>>>>>> Stashed changes
         
     }
     article .news_thumnail img{
         margin-top: 30px;
-<<<<<<< Updated upstream
+
         width: 90%;
         height: 80%;
         margin: 10px;
-        
-=======
+
         width: 100%;
         height: 100%;
         margin: 10px;
@@ -644,7 +711,7 @@ footer .widget_title_text {
     }
     .news_resume{
         padding: 10px;
->>>>>>> Stashed changes
+
         
     }
 
