@@ -488,15 +488,19 @@ article .news_resume{
     .form .formulario button {
         width: 80%;
         padding: 15px;
-        background-color: rgb(52, 214, 101);
+        background: linear-gradient(269.2deg, rgb(38, 190, 62) 0%, rgb(87, 221, 56) 100%);
         border: none;
         border-radius: 8px;
         margin-top: 10px;
         color: #FFF;
+        
     }
 
     .form .formulario button:hover{
-        background-color: rgb(46, 187, 88);
+        background: rgb(46, 187, 88);
+        padding: 20px;
+        transform: scale(1.0);
+        transition: all 0.5s;
         
     }
 
