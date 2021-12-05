@@ -437,7 +437,10 @@ article .news_resume{
     .form {
         display: flex;
         width: 100%;
-        background-color: #8257e5;
+        background-image: url(./images/skylab-mockup-background.png);
+        background-repeat: no-repeat;
+        
+        background-size: 100% 100%;
         height: 600px;
         display: flex;
         align-items: center;
@@ -498,9 +501,6 @@ article .news_resume{
 
     .form .formulario button:hover{
         background: rgb(46, 187, 88);
-        padding: 20px;
-        transform: scale(1.0);
-        transition: all 0.5s;
         
     }
 
@@ -567,10 +567,10 @@ footer .widget_title_text {
 
 }
 
-.whatshap-fixo{
-    width: 100px;
+.whatshap-fixo {
+    width: 50px;
     height: 50px;
-    background-color: rgb(52, 214, 101);
+    
     position: absolute;
     min-width: 50px;
     margin-left: 90vw;
@@ -583,7 +583,8 @@ footer .widget_title_text {
  
 }
 .whatshap-fixo img {
-    width: 40px;
+    width: 55px;
+    border-radius: 50%;
 }
 
 
