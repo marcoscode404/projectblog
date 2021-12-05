@@ -41,7 +41,7 @@ header .logo{
     display: flex;
     align-items: center;
     font-family:  sans-serif;
-    color: #0a0b0cef;
+    color: #B159AC;
     font-size: 1rem;
     
     
@@ -96,11 +96,13 @@ nav a:hover{
 }
 .socialMidia ul {
     display: flex;
-    background-color: rgb(240, 235, 235);
+    background: rgb(224, 220, 220);
+    border-radius: 8px;
     width: 100%;
+    height: 20px;
     text-decoration: none;
-    gap: 10px;
-    justify-content: space-between;
+    
+    justify-content: space-around;
     list-style: none;
 }
 .socialMidia ul li {
@@ -113,9 +115,6 @@ nav a:hover{
 #banner {
     display: flex;
     justify-content: center;
-    
-    
-
     height: 850px;
 }
 
@@ -186,20 +185,32 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:  #8257e5;
-    width: auto;
+    background-image: url(./images/skylab-mockup-background.png);
+    background-repeat: no-repeat;
+    
+    background-size: 100% auto;
+   
     height: 600px;
+    
 }
 
 .quemsoueu .name{
     width: 100%;
-    height: 400px;
-    
+    height: 100%;
+    background-color: #f013d4;
+    background-image: -webkit-linear-gradient(108deg, #380f33 0%, #251b24 30%, #0f0c0e 66%, #050505 100%);
+    background-image: -moz-linear-gradient(108deg, #000000 0%, #3d0637 30%, #da07a0 66%, #ffcc70 100%);
+    background-image: -o-linear-gradient(108deg, #000000 0%, #330d2f 30%, #da07a0 66%, #ffcc70 100%);
+    background-image: linear-gradient(108deg, #201b1b 0%, #962789 30%, #da07a0 66%, #ffcc70 100%);
+
     gap: 40px;
     color: #fff;
     display: flex;
     align-items: center;    
     justify-content: space-around;
+    border-left: 1px solid rgb(18, 51, 15);
+
+    
 }
 .quemsoueu .name .texto{
     margin: 40px 30px;
@@ -213,11 +224,12 @@ nav a:hover{
 }
 
 .quemsoueu .name img {
-    margin-top: 5px;
-    width: 15rem;
-    height: 15rem;
-    border: 2px solid rgb(230, 255, 2);
-    border-radius: 50%;
+    margin-left: 30px;
+    width: 14rem;
+    height: 16.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+    /* border-radius: 50%; */
 }
 
 
@@ -423,6 +435,7 @@ article .news_resume{
 
 /* form de contato */
     .form {
+        display: flex;
         width: 100%;
         background-color: #8257e5;
         height: 600px;
@@ -481,6 +494,13 @@ article .news_resume{
         margin-top: 10px;
         color: #FFF;
     }
+
+    .form .formulario button:hover{
+        background-color: rgb(46, 187, 88);
+        
+    }
+
+
 /* /form de contato */
 
 footer{
@@ -543,6 +563,24 @@ footer .widget_title_text {
 
 }
 
+.whatshap-fixo{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(52, 214, 101);
+    position: absolute;
+    min-width: 50px;
+    margin-left: 90vw;
+    margin-top: 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+ 
+}
+.whatshap-fixo img {
+    width: 40px;
+}
 
 
 /* responsividade */
@@ -603,12 +641,17 @@ footer .widget_title_text {
     }
 
     .quemsoueu{
-        height: 1000px;
+        height: 100%;
     }
     .quemsoueu .name{
         flex-direction: column;
         
     }
+    .quemsoueu .name img {
+        margin: 50px auto 10px;
+        width: 12rem;
+        height: 13.5rem;
+    } 
 
     .form .formulario {
         min-width: 200px;
@@ -645,6 +688,10 @@ footer .widget_title_text {
 
     .footer_copy {
         padding-left: 20px;
+    }
+
+    .whatshap-fixo{
+        margin-left: 70vw;
     }
 
     /* header ao normal */
