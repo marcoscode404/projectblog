@@ -29,8 +29,8 @@ header{
     display: flex;
     justify-content: center;
     height: 5rem;
-    background-color:  #fdfeff;
-    border-bottom: 2px solid;
+    background-color:  #7159c1;
+    border-bottom: 2px solid #8257E5;
     
    
 }
@@ -41,7 +41,7 @@ header .logo{
     display: flex;
     align-items: center;
     font-family:  sans-serif;
-    color: #B159AC;
+    color: #fff;
     font-size: 1rem;
     
     
@@ -49,7 +49,7 @@ header .logo{
 
 
 
-header .menu{
+header .menuCentral{
     display: flex;
     align-items: center;
     justify-content: space-between;  
@@ -77,7 +77,7 @@ nav a{
     padding: 15px;
     text-decoration: none;
     font-family:  sans-serif;
-    color: #0a0b0cef;
+    color: #fff;
     text-transform: uppercase;
     align-items: center;
     
@@ -89,6 +89,12 @@ nav a:hover{
     
 }
 
+#btn-mobile{
+    display: none;
+}
+/* botao mobile */
+
+
 .socialMidia {
     width: 12rem;
     display: flex;
@@ -99,30 +105,30 @@ nav a:hover{
     background: rgb(224, 220, 220);
     border-radius: 8px;
     width: 100%;
-    height: 20px;
+    height: 1.4rem;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     
-    justify-content: space-around;
+    gap: 15px;
     list-style: none;
 }
 .socialMidia ul li {
     cursor: pointer;
 }
 
-.buttom-Curriculo{
-    
-        width: 50%;
-        padding: 15px;
+.btn-Curriculum{
+        padding: 1rem;
         background: linear-gradient(269.2deg, rgb(38, 190, 62) 0%, rgb(87, 221, 56) 100%);
         border: none;
         border-radius: 8px;
-        margin-top: 10px;
         color: #FFF;
-        margin-top: 10px;
+        cursor: pointer;
+        
         
     }
 
-    .buttom-Curriculo:hover{
+    .btn-Curriculum:hover{
         background: rgb(46, 187, 88);
         
     }
@@ -175,6 +181,7 @@ nav a:hover{
     padding: 0;
     margin-top: 30px;
     max-width: 80%;
+    margin-bottom: 40px;
 }
 .textBanner span{
     color: rgb(110, 92, 92);
@@ -273,14 +280,49 @@ nav a:hover{
 
 .news {
     width: 100%;
-    height: 100%;
-   
+    height: 400px;
+    background-color: #8257e5;
     margin: 75px 0 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    
 }
 .news img {
     width: 100%;
-    height: 250px;
+    height: 15rem;
+    border-radius: 8px 8px 0 0;
+
+  
     
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    
+}
+.news img:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+
+.news .title-anc{
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    color: #FFF;
+   
+    padding: 0 30px;
+    height: 150px;
+    
+}
+.news .title-anc h2 {
+    font-size: 1rem;
 }
 
 
@@ -293,7 +335,7 @@ nav a:hover{
 }
 
 .widget_title_text{
-    color: #8257e5;;
+    color: #8257e5;
     font-size: 21px;
     font-weight: bold;
     
@@ -315,13 +357,15 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     height: 100%;
-    margin-bottom: 10px;
+  
+    
 }
 .caixas1{
-    width: 155px;
-    height: 155px;
+    width: 100%;
+    height: 15rem;
     margin-bottom: 15px;
-    background-color: #551d6b;
+    background-color: #8257e5;
+    border-radius: 8px;
 }
 
 .widget_body h4{
@@ -342,7 +386,7 @@ nav a:hover{
     padding-bottom: 10px;
     border-bottom: 2px solid rgba(12, 9, 9, 0.342);
     margin-bottom: 10px;
-    /* background-color: red; */
+    
     
 }
 
@@ -388,8 +432,8 @@ article .news_data{
 }
 
 article .news_posted_at{
-    background-color: rgb(64, 7, 75);
-    color: #e4d7e3;
+    background:  linear-gradient(269.2deg, rgb(38, 190, 62) 0%, rgb(87, 221, 56) 100%);
+    color: #fff;
     font-size: 12px;
     padding: 10px;
     margin-right: 2px;
@@ -397,8 +441,8 @@ article .news_posted_at{
 }
  
 article .news_comments{
-    background-color: #39aae1;
-    color: #e4d7e3;
+    background-color: #8257e5;
+    color: #fff;
     font-size: 12px;
     padding: 10px;
     
@@ -408,8 +452,8 @@ article .news_thumnail{
     margin-top: 30px ;
     width: 100%;
     height: 450px;
-    
-    
+    overflow: hidden;
+   
 }
 
 
@@ -418,9 +462,17 @@ article .news_thumnail{
 article .news_thumnail img{
     width: 100%;
     height: 100%;
-    
-    
-    
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+        
+}
+article .news_thumnail img:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 
@@ -464,9 +516,16 @@ article .news_resume{
         justify-content: center;
         
     }
+
+    .divform{
+        height: 450px;
+        width: 30rem;
+        background-color: rgba(43, 255, 0, 0.459);
+    }
+
     .form .formulario{
-        width: 500px;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         background-color: #2d3f47b7;
         display: flex;
         flex-direction: column;
@@ -476,7 +535,7 @@ article .news_resume{
         margin-bottom: 10px;
     }
     .form .formulario input {
-        width: 400px;
+        width: 80%;
         height: 50px;
         border-radius: 8px;
         
@@ -492,11 +551,11 @@ article .news_resume{
     .form .formulario textarea {
         outline: unset;
         padding: 10px;
-        width: 400px;
+        width: 80%;
         border: none;
         outline: none;
-        max-width: 400px;
-        min-width: 400px;
+        max-width: 80%;
+        min-width: 80%;
         max-height: 180px;
         color: #8257e5;
         font-size: 1rem;
@@ -584,19 +643,19 @@ footer .widget_title_text {
 
 }
 
-.whatshap-fixo {
-    width: 50px;
-    height: 50px;
-    
-    position: absolute;
-    min-width: 50px;
-    margin-left: 90vw;
-    margin-top: 10px;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.whatshap-fixo a{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
  
 }
 .whatshap-fixo img {
@@ -607,6 +666,78 @@ footer .widget_title_text {
 
 /* responsividade */
 @media (max-width:734px){
+
+    #btn-mobile{
+        display: block;
+    }
+    
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #d7a5dd;
+       
+       
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(12, 9, 9, 0.342);
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+
+    }
+    #hamburguer {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+
+    }
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }   
+
+
+
     .socialMidia{
         display: none;
         
@@ -684,17 +815,25 @@ footer .widget_title_text {
 
     /* div laterais */
     .news{
-        max-width: 300px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        max-width: 400px;
     }
+   
+    
 
     .caixas{
         flex-direction: column;
         width: 100%;
-        max-width: 300px;
+        max-width: 400px;
+        margin-left: 5px;
 
     }
     .caixas1{
-        width: 80%;
+
+        width: 100%;
+        
     }
 
     /* FOOTER */
@@ -756,7 +895,7 @@ footer .widget_title_text {
     article .news_thumnail{
         margin-top: 30px;
         width: 100%;
-        height: 400px;
+        height: 300px;
         
         
        
@@ -766,7 +905,7 @@ footer .widget_title_text {
         margin-top: 30px;
 
         width: 90%;
-        height: 80%;
+        height: 60%;
         margin: 10px;
 
         width: 100%;
@@ -776,7 +915,7 @@ footer .widget_title_text {
         
     }
     .headline img {
-        width: 15rem;
+        display: none;
     }
     .news_resume{
         padding: 10px;

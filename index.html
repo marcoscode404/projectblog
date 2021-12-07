@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto com CoLab dev´s!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slide.css">
+
 </head>
 <body>
     
-    <header>
+    <header id="header">
         <div class="container">
           
-            <div class="menu">
+            <div class="menuCentral">
 
                 <div class="logo">
-                    <a href="#"></a>
                     <h2>ViniCode</h2>
                 </div>
                 <!-- logo -->
 
-
-
-                <nav>
-                    <ul>
+                <nav id="nav">
+                    <ul id="menu" role="menu">
                         <li><a href="#">Home</a></li>
                         <!-- <li><a href="#"></a></li> -->
                         <li><a href="#">quem sou</a></li>
@@ -34,6 +33,12 @@
                     </ul>
                 </nav>
                  <!-- navegação -->
+                
+                 <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburguer"></span>
+                 </button>
+                 
+                 <!-- btn mobile -->
 
                 <div class="socialMidia">
                     <ul>
@@ -86,9 +91,9 @@
                         <img src="images/experimentos (1).png" alt="experimentos" >
                         <span>Development web  Marcos Vini
                         </span>
-                        
+                       
                     </h2>
-                    <button class="buttom-Curriculo">Curriculo</button>
+                    <a class="btn-Curriculum">Curriculo Pessoal</a>
                     
                 </div>
 
@@ -197,9 +202,6 @@
 
             <section>
 
-               
-                
-
                 <div class="widget">
                     <div class="widget_title">
                         <div class="widget_title_text">Proximas noticias</div>
@@ -276,30 +278,43 @@
                     <!-- widget_title -->
 
                     <div class="news">
-                        <img src="https://cdn.pixabay.com/photo/2019/09/22/16/20/location-4496459_960_720.png" alt="">
+                        <img src="images/i.png" alt=""> 
+                       
+                        <div class="title-anc">
+                            <h2>Fique Por dentro de Tudo Sobre conteudos de tecnologia web! </h2>
+                        </div>
                     </div>
 
-
+                    
 
 
                     <div class="widget_body">
                         <div class="caixas">
                             <div class="caixas1">
-
-                               
-
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8071721547212482"
+                                        crossorigin="anonymous"></script>
+                                    <!-- portfolio2 -->
+                                    <ins class="adsbygoogle"
+                                        style="display:block"
+                                        data-ad-client="ca-pub-8071721547212482"
+                                        data-ad-slot="9120652485"
+                                        data-ad-format="auto"
+                                        data-full-width-responsive="true"></ins>
+                                    <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
                             </div>
-                            <div class="caixas1"></div>
+                            
                         </div>
 
                         <div class="caixas">
                             <div class="caixas1"></div>
-                            <div class="caixas1"></div>
+                            
                         </div>
 
                         <div class="caixas">
                             <div class="caixas1"></div>
-                            <div class="caixas1"></div>
+                            
                         </div>
                         
                     </div>
@@ -366,7 +381,7 @@
 
     <section class="form">
         
-        <!-- <div> -->
+        <div class="divform">
             <form class="formulario" action="https://formsubmit.co/marcosviniciuspgerogov253@gmail.com" method="POST">
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/projectblog/sucesso.html">
         
@@ -386,7 +401,7 @@
             </form> 
 
             
-        <!-- </div> -->
+        </div>
     </section>
 
 
@@ -465,13 +480,21 @@
         </div>
         <!-- container -->
         
-        <div class="whatshap-fixo">
-            <img src="images/whatsapp (1).png" alt="">
-        </div>
+
+      
+      
         
     </footer>
 
-
+    <div class="whatshap-fixo">
+            
+        
+        <a href="https://api.whatsapp.com/send?phone=556999732942&text=Olá,%20Gostaria%20de%20Conversar%20referente%20ao%20seu%20portfolio!%20" 
+        z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp" ></i>
+        </a>
+    </div>
+    <!-- whats flutuante -->
 
 
 
