@@ -148,12 +148,14 @@
     } 
 
     .form .formulario {
-        min-width: 200px;
+        min-width: 300px;
     }
     .form input {
-        width: 100px;
+        min-width: 90%;
     }
-
+    .form .formulario textarea {
+        min-width: 90%;
+    }
     /* div laterais */
     .news{
         justify-content: center;
@@ -225,7 +227,7 @@
 
 
 
-    /* .RedesSociais  {
+    .RedesSociais  {
         height: 400px;
         flex-wrap:  wrap ;
     }
@@ -237,13 +239,13 @@
         
     }
     .RedesSociais ul li {
-        height: 10%;
-        width: 50px;
+        height: 30%;
+        width: 100px;
     }
     .RedesSociais ul li a {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
-     */
+    
 }
 
 @media (max-width: 350px) {

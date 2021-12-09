@@ -69,3 +69,24 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+
+
+
+
+
+// animation texto
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Construindo interface!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Dev Marcos Vini Code!')
+    .pauseFor(4000)
+    .deleteChars(21)
+    .typeString('Obrigado!')
+    .start();

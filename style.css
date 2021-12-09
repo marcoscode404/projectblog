@@ -288,9 +288,10 @@ nav a:hover{
     width: 100%;
     height: 400px;
     background-color: #7159C1;
-    margin: 75px 0 10px;
+    margin: 75px 0px 22px 0px;
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     
 }
 .news img {
@@ -314,22 +315,39 @@ nav a:hover{
 }
 
 
-
+.news a {
+    text-decoration: none;
+}
 
 .news .title-anc{
     width: 100%;
     display: flex;
-    margin-top: 25px;
+    flex-direction: column;
+    margin-top: 3px;
     justify-content: center;
-    color: #FFF;
-   
+    
+    align-items: center;
     padding: 0 30px;
     height: 150px;
+    gap: 10px;
     
+   
 }
 .news .title-anc h2 {
     font-size: 1rem;
+    margin-top: -30px;
+    color: rgb(228, 224, 22);
+    border-bottom: 1px solid #fff;
+    
 }
+.news .title-anc p {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+}
+
 
 
 
@@ -363,15 +381,18 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     height: 100%;
+    margin-top: 11px;
+    
   
     
 }
 .caixas1{
     width: 100%;
-    height: 15rem;
+    height: 18rem;
     margin-bottom: 15px;
-    background-color: #7159C1;
+    background-color: #c7abd4;
     border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .widget_body h4{
@@ -651,7 +672,7 @@ footer .widget_title_text {
 
 /* Botão voltar ao topo */
 .voltarTop {
-    background: #2c2c2c;
+    background: #6745d8;
     width: 80px;
     height: 80px;
    border-radius: 50%;
@@ -692,9 +713,9 @@ footer .widget_title_text {
     
     width: 100%;
    
-    height: 11rem;
+    height: 12rem;
     
-    
+   
     display: flex;
     
     justify-content: center;
@@ -703,12 +724,14 @@ footer .widget_title_text {
 
 .RedesSociais ul {
     
-    min-width: 53%;
+    /* min-width: 53%; */
     max-width: 1000px;
+    width: 100%;
     height: 100%;
     gap: 50px;
     text-decoration: none;
-    background-color: rgb(233, 228, 228);
+    background-color: rgb(248, 243, 243);
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -717,22 +740,26 @@ footer .widget_title_text {
 }
 
 .RedesSociais ul li {
+    
     list-style: none;
-    background-color: #5638a1;
+    background-color: #f2f1f5;
     height: 50%;
     width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 8px;
     cursor: pointer;
+    box-shadow: rgba(121, 36, 155, 0.35) 0px 5px 15px;
 }
 .RedesSociais ul li:hover{
-    background-color: #7a61bb;
+    background-color: #e9e7ec;
+    
 }
 
+
 .RedesSociais ul li a{
-    color: rgb(233, 240, 234);
+    color: rgb(153, 24, 185);
     list-style: none;
     text-decoration: none;
     
