@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="responsividade.css">
 
 </head>
 <body>
@@ -16,7 +17,7 @@
     <header id="header">
         <div class="container">
           
-            <div class="menuCentral">
+            <div id="menuCentralTop" class="menuCentral">
 
                 <div class="logo">
                     <h2>ViniCode</h2>
@@ -25,11 +26,12 @@
 
                 <nav id="nav">
                     <ul id="menu" role="menu">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#banner">Home</a></li>
                         <!-- <li><a href="#"></a></li> -->
-                        <li><a href="#">quem sou</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#quemsoueu">quem sou</a></li>
+                        <li><a href="#RedesSociais">Blog</a></li>
+                        <li><a href="#contato">Contact</a></li>
+                       
                     </ul>
                 </nav>
                  <!-- navegação -->
@@ -112,16 +114,16 @@
 
 
     <!-- Slideshow container -->
-    <div class="quemsoueu">
+    <div  id="quemsoueu" class="quemsoueu">
         <div class="slideshow-container">
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 4</div>
+                    <div class="numbertext">1 / 3</div>
                     <!-- <img src="images/skylab-mockup-background.png" style="width:100%"> -->
                     <div class="name">
                                             
-                        <img src="https://scontent.fpvh6-1.fna.fbcdn.net/v/t39.30808-6/238965195_2914828718779360_1695806475069095092_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFlZQeQdf_y31UUtlmOVO7LqUh8TRvmqE2pSHxNG-aoTZ7gYjIELvFawC_ADKdvkWL68Ap7XiiyvCiG0AwIhp3v&_nc_ohc=an-C6mNQY_AAX_tdEq3&_nc_ht=scontent.fpvh6-1.fna&oh=508d9d2c15de696a3829ef6dc3a56612&oe=61AD3223" alt="">
+                        <img src="https://scontent.fpvh6-1.fna.fbcdn.net/v/t1.15752-9/263713025_186301686981012_5083506129248751087_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeH0wx1niMhLXhH23ohF3XPQ0irf0F381hHSKt_QXfzWEYf2xktbSAlqnry5XKUCRYAvm9Rg2NKp7ong4jhMq9XG&_nc_ohc=uujHB7SXhhUAX9zJENL&_nc_ht=scontent.fpvh6-1.fna&oh=d65d7a4542d9f2e8817579b6d43e46c3&oe=61D7C6EB"alt="">
                     
                         
                         <div class="texto">
@@ -153,27 +155,21 @@
                         <!-- /texto -->
                     </div>
                     <!-- name -->
-                    <div class="text">Caption Text</div>
+                    <div class="text">Apresentação</div>
                 </div>
             
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 4</div>
-                    <img class="slidess" src="images/Custom Artboard (1).png" style="width:100%">
-                    <h2 style="color: aliceblue;">Tecnologias que já desbravei!</h2>
-                    <div class="text">Caption Two</div>
+                    <div class="numbertext">2 / 3</div>
+                    <img  src="images/1.png" style="width:100%">
+                    <div class="text">Tecnologias</div>
                 </div>
             
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="images/skylab-mockup-background.png" style="width:100%">
-                    <div class="text">Caption Three</div>
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/2.png" style="width:100%">
+                    <div class="text">dev</div>
                 </div>
-            
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="images/skylab-mockup-background.png" style="width:100%">
-                    <div class="text">Caption Three</div>
-                </div>
+
             
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -188,9 +184,19 @@
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
+    
   </div>
 
+  <div id="RedesSociais" class="RedesSociais">
+      
+    <ul>
+        <!-- <h2 style="color: #7159C1;">Redes</h2> -->
+        <li><a href="https://www.linkedin.com/in/marcos-vini-code-984903181/" target="_blank">Linkdin</a></li>
+        <li><a href="https://www.facebook.com/Marcos.Code1999" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/marcosviniicode/" target="_blank">Instagram</a></li>
+        <li><a href="https://twitter.com/MarcosV22772662" target="_blank">Twitter</a></li>
+    </ul>
+</div>
 
    
     <section id="geral">
@@ -198,7 +204,7 @@
      
     
 
-        <div class="container">
+        <div id="blog" class="container">
 
             <section>
 
@@ -278,7 +284,7 @@
                     <!-- widget_title -->
 
                     <div class="news">
-                        <img src="images/i.png" alt=""> 
+                        <img src="images/Vector_2646.jpg" alt=""> 
                        
                         <div class="title-anc">
                             <h2>Fique Por dentro de Tudo Sobre conteudos de tecnologia web! </h2>
@@ -400,12 +406,15 @@
                 <button type="submit">Enviar</button>
             </form> 
 
+         
             
         </div>
     </section>
 
+  
+    
 
-    <footer>
+    <footer id="contato">
         
         <div class="container flexColumn">
             
@@ -469,7 +478,11 @@
                     </div>
                     <!-- widget -->
                 </div>
-    
+                
+                <div class="voltarTop">
+                    <a  href="#menuCentralTop" >Voltar ao topo!</a>
+                </div>
+                <!-- botão voltar ao topo -->
                
             </div>
             <!-- /footer_area -->
@@ -490,7 +503,7 @@
             
         
         <a href="https://api.whatsapp.com/send?phone=556999732942&text=Olá,%20Gostaria%20de%20Conversar%20referente%20ao%20seu%20portfolio!%20" 
-        z-index:1000;" target="_blank">
+        target="_blank">
         <i style="margin-top:16px" class="fa fa-whatsapp" ></i>
         </a>
     </div>

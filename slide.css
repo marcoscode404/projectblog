@@ -60,10 +60,10 @@
   top: 0;
 }
 
-.slidess {
+/* .slidess {
     width: 100vw;
     height: 50%;
-}
+} */
 
 /* The dots/bullets/indicators */
 .dot {
@@ -78,7 +78,7 @@
 }
 
 .active, .dot:hover {
-  background: linear-gradient(269.2deg, rgb(38, 190, 62) 0%, rgb(87, 221, 56) 100%);
+  background: #7159C1;
 }
 
 /* Fading animation */

@@ -6,6 +6,10 @@
     font-family: Arial;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 :root {
     --background-geral: #121214
@@ -63,6 +67,7 @@ nav li{
     list-style: none;
    
     margin-right: 5px;
+    
 }
 
 nav ul{
@@ -119,7 +124,7 @@ nav a:hover{
 
 .btn-Curriculum{
         padding: 1rem;
-        background: linear-gradient(269.2deg, rgb(38, 190, 62) 0%, rgb(87, 221, 56) 100%);
+        background: linear-gradient(269.2deg, #7055c9 0%, #7159C1 100%);
         border: none;
         border-radius: 8px;
         color: #FFF;
@@ -138,7 +143,7 @@ nav a:hover{
 #banner {
     display: flex;
     justify-content: center;
-    height: 850px;
+    height: 950px;
 }
 
 .column{
@@ -212,15 +217,15 @@ nav a:hover{
     background-image: url(./images/skylab-mockup-background.png);
     background-repeat: no-repeat;
     
-    background-size: 100% auto;
+    background-size: 100% 100%;
    
-    height: 700px;
+    height: 800px;
     
 }
 
  .name{
     width: 100%;
-    height: 100%;
+    height: 600px;
     background-color: #f013d4;
     background-image: -webkit-linear-gradient(108deg, #380f33 0%, #251b24 30%, #0f0c0e 66%, #050505 100%);
     background-image: -moz-linear-gradient(108deg, #000000 0%, #3d0637 30%, #da07a0 66%, #ffcc70 100%);
@@ -231,7 +236,7 @@ nav a:hover{
     color: #fff;
     display: flex;
     align-items: center;    
-    justify-content: space-around;
+    
     border-left: 1px solid rgb(18, 51, 15);
 
     
@@ -249,11 +254,12 @@ nav a:hover{
 
  .name img {
     margin-left: 30px;
-    width: 14rem;
-    height: 16.5rem;
+    width: 10rem;
+    height: 12rem;
+
     object-fit: cover;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
-    /* border-radius: 50%; */
+    
 }
 
 
@@ -281,7 +287,7 @@ nav a:hover{
 .news {
     width: 100%;
     height: 400px;
-    background-color: #8257e5;
+    background-color: #7159C1;
     margin: 75px 0 10px;
     border-radius: 8px;
     overflow: hidden;
@@ -364,7 +370,7 @@ nav a:hover{
     width: 100%;
     height: 15rem;
     margin-bottom: 15px;
-    background-color: #8257e5;
+    background-color: #7159C1;
     border-radius: 8px;
 }
 
@@ -510,7 +516,7 @@ article .news_resume{
         background-repeat: no-repeat;
         
         background-size: 100% 100%;
-        height: 600px;
+        height: 640px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -518,9 +524,9 @@ article .news_resume{
     }
 
     .divform{
-        height: 450px;
-        width: 30rem;
-        background-color: rgba(43, 255, 0, 0.459);
+        height: 500px;
+        width: 61rem;
+        background-color: rgba(7, 12, 6, 0.459);
     }
 
     .form .formulario{
@@ -535,7 +541,7 @@ article .news_resume{
         margin-bottom: 10px;
     }
     .form .formulario input {
-        width: 80%;
+        width: 50%;
         height: 50px;
         border-radius: 8px;
         
@@ -551,11 +557,11 @@ article .news_resume{
     .form .formulario textarea {
         outline: unset;
         padding: 10px;
-        width: 80%;
+        width: 50%;
         border: none;
         outline: none;
-        max-width: 80%;
-        min-width: 80%;
+        max-width: 50%;
+        min-width: 50%;
         max-height: 180px;
         color: #8257e5;
         font-size: 1rem;
@@ -565,9 +571,9 @@ article .news_resume{
     }
 
     .form .formulario button {
-        width: 80%;
+        width: 50%;
         padding: 15px;
-        background: linear-gradient(269.2deg, rgb(38, 190, 62) 0%, rgb(87, 221, 56) 100%);
+        background: linear-gradient(269.2deg, #6642dd 0%, #7159C1 100%);
         border: none;
         border-radius: 8px;
         margin-top: 10px;
@@ -643,6 +649,25 @@ footer .widget_title_text {
 
 }
 
+/* Botão voltar ao topo */
+.voltarTop {
+    background: #2c2c2c;
+    width: 80px;
+    height: 80px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   margin-top: 10px;
+  
+}
+.voltarTop > a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
 .whatshap-fixo a{
     position:fixed;
     width:60px;
@@ -663,266 +688,52 @@ footer .widget_title_text {
     border-radius: 50%;
 }
 
-
-/* responsividade */
-@media (max-width:734px){
-
-    #btn-mobile{
-        display: block;
-    }
+.RedesSociais{
     
-    #menu {
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background: #d7a5dd;
-       
-       
-        transition: .6s;
-        z-index: 1000;
-        height: 0px;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-
-    #nav.active #menu {
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
-        
-    }
-    #menu a {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(12, 9, 9, 0.342);
-    }
-
-    #btn-mobile{
-        display: flex;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        gap: .5rem;
-
-    }
-    #hamburguer {
-        display: block;
-        border-top: 2px solid;
-        width: 20px;
-
-    }
-    #hamburguer::after, #hamburguer::before{
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-    #nav.active #hamburguer{
-        border-top-color: transparent;
-    }
-    #nav.active #hamburguer::before{
-        transform: rotate(135deg);
-    }
-    #nav.active #hamburguer::after{
-        transform: rotate(-135deg);
-        top: -7px;
-    }   
-
-
-
-    .socialMidia{
-        display: none;
-        
-    }
-    .banner_headline{
-        
-        width: 90vw;
-        overflow: hidden;
-        margin: auto;
-        margin-top: 50px;
-        flex-direction: column;
-    }
-    .textBanner{
-        
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .banner_headline h1{
-        font-size: 3rem;
-       
-    }
-    .banner_headline h2{
-        font-size: 1rem;
-        max-width: 100%;
-        height: 100px;
-        
-    }
-    .banner_options {
-        height: auto;
-        flex-direction: column;
-    }
-    .headline{
-        display: flex;
-        justify-content: center;
-        
-    }
-    .headline img {
-        width: 20rem;
-        
-
-    }
-
-    .container{
-        flex-direction: column;
-    }
-
-    #geral section,
-    #geral aside{
-        margin: 15px;
-        
-       
-    }
-
-    .quemsoueu{
-        height: 100%;
-    }
-     .name{
-        flex-direction: column;
-        
-    }
-    .quemsoueu .name img {
-        margin: 50px auto 10px;
-        width: 12rem;
-        height: 13.5rem;
-    } 
-
-    .form .formulario {
-        min-width: 200px;
-    }
-    .form input {
-        width: 100px;
-    }
-
-    /* div laterais */
-    .news{
-        justify-content: center;
-        align-items: center;
-        margin-left: 5px;
-        max-width: 400px;
-    }
+    width: 100%;
    
+    height: 11rem;
     
-
-    .caixas{
-        flex-direction: column;
-        width: 100%;
-        max-width: 400px;
-        margin-left: 5px;
-
-    }
-    .caixas1{
-
-        width: 100%;
-        
-    }
-
-    /* FOOTER */
-    .footer_menu{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .footer_area{
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .footer_copy {
-        padding-left: 20px;
-    }
-
-    .whatshap-fixo{
-        margin-left: 70vw;
-    }
-
-    /* header ao normal */
-    header .container {
-        flex-direction: row;
-    }
-
-    nav ul{
-        flex-direction: column;
-        display: none;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        margin-top: 20px;
-        
-        
-    }
-
-    header{
-       
-        height: 100px; /*aumenta o tamanho do header*/
-       
-        
-    }
     
-    .logo{
-        padding-left: 20px;
-    }
-
+    display: flex;
     
+    justify-content: center;
+    margin: 1.5rem 0 1.5rem 0;
 }
 
-@media (max-width: 350px) {
-    #geral section,
-    #geral aside{
-        margin: 20px;
-        
-       
-    }
-    article .news_thumnail{
-        margin-top: 30px;
-        width: 100%;
-        height: 300px;
-        
-        
-       
-        
-    }
-    article .news_thumnail img{
-        margin-top: 30px;
-
-        width: 90%;
-        height: 60%;
-        margin: 10px;
-
-        width: 100%;
-        height: 100%;
-        margin: 10px;
-       
-        
-    }
-    .headline img {
-        display: none;
-    }
-    .news_resume{
-        padding: 10px;
-
-        
-    }
-
+.RedesSociais ul {
     
+    min-width: 53%;
+    max-width: 1000px;
+    height: 100%;
+    gap: 50px;
+    text-decoration: none;
+    background-color: rgb(233, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.RedesSociais ul li {
+    list-style: none;
+    background-color: #5638a1;
+    height: 50%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.RedesSociais ul li:hover{
+    background-color: #7a61bb;
+}
+
+.RedesSociais ul li a{
+    color: rgb(233, 240, 234);
+    list-style: none;
+    text-decoration: none;
     
 }

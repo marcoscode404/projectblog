@@ -1,0 +1,289 @@
+
+/* responsividade */
+@media (max-width:734px){
+
+    #btn-mobile{
+        display: block;
+    }
+    
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #d7a5dd;
+       
+       
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(12, 9, 9, 0.342);
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+
+    }
+    #hamburguer {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+
+    }
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }   
+
+
+
+    .socialMidia{
+        display: none;
+        
+    }
+    .banner_headline{
+        
+        width: 90vw;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .textBanner{
+        
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .banner_headline h1{
+        font-size: 3rem;
+       
+    }
+    .banner_headline h2{
+        font-size: 1rem;
+        max-width: 100%;
+        height: 100px;
+        
+    }
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+    .headline{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .headline img {
+        width: 20rem;
+        
+
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside{
+        margin: 15px;
+        
+       
+    }
+
+    .quemsoueu{
+        height: 100%;
+    }
+     .name{
+        flex-direction: column;
+        height: 100%;
+        
+    }
+
+    .quemsoueu .name .texto {
+        font-size: 1rem;
+    }
+
+    .quemsoueu .name img {
+        margin: 50px auto 10px;
+        width: 12rem;
+        height: 13.5rem;
+    } 
+
+    .form .formulario {
+        min-width: 200px;
+    }
+    .form input {
+        width: 100px;
+    }
+
+    /* div laterais */
+    .news{
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        max-width: 400px;
+    }
+   
+    
+
+    .caixas{
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        margin-left: 5px;
+
+    }
+    .caixas1{
+
+        width: 100%;
+        
+    }
+
+    /* FOOTER */
+    .footer_menu{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer_area{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer_copy {
+        padding-left: 20px;
+    }
+
+    .whatshap-fixo{
+        margin-left: 70vw;
+    }
+
+    /* header ao normal */
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin-top: 20px;
+        
+        
+    }
+
+    header{
+       
+        height: 100px; /*aumenta o tamanho do header*/
+       
+        
+    }
+    
+    .logo{
+        padding-left: 20px;
+    }
+
+
+
+    /* .RedesSociais  {
+        height: 400px;
+        flex-wrap:  wrap ;
+    }
+    .RedesSociais ul{
+        flex-direction: row;
+       
+        
+        width: 100%;
+        
+    }
+    .RedesSociais ul li {
+        height: 10%;
+        width: 50px;
+    }
+    .RedesSociais ul li a {
+        font-size: 0.7rem;
+    }
+     */
+}
+
+@media (max-width: 350px) {
+    #geral section,
+    #geral aside{
+        margin: 20px;
+        
+       
+    }
+    article .news_thumnail{
+        margin-top: 30px;
+        width: 100%;
+        height: 300px;
+        
+        
+       
+        
+    }
+    article .news_thumnail img{
+        margin-top: 30px;
+
+        width: 90%;
+        height: 60%;
+        margin: 10px;
+
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+       
+        
+    }
+    .headline img {
+        display: none;
+    }
+    .news_resume{
+        padding: 10px;
+
+        
+    }
+
+    
+    
+}
