@@ -193,9 +193,9 @@ nav a:hover{
 
 .seta{
    
-    width: 30px;
-    height: 20px;
-    margin-left: 50%;
+    width: 2rem;
+    height: 1.4rem;
+    margin: auto;
     margin-top: -40px;
 }
 
@@ -240,7 +240,7 @@ nav a:hover{
 .news {
     width: 100%;
     height: 400px;
-    background-color: #7159C1;
+    background-color: #8257e5;
     margin: 75px 0px 22px 0px;
     border-radius: 8px;
     overflow: hidden;
@@ -357,7 +357,7 @@ nav a:hover{
 .widget_title_bar{
     width: 50px;
     height: 2px;
-    background-color: var(--cor-text-azul);
+    /* background-color: var(--cor-text-azul); */
     margin-top: 10px;
 }
 
@@ -379,7 +379,7 @@ nav a:hover{
     width: 100%;
     height: 18rem;
     margin-bottom: 15px;
-    background-color: #c7abd4;
+    background-color: #8257e5;
     border-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -508,15 +508,6 @@ article .news_resume{
     font-size: 14px;
     margin-bottom: 30px;
     text-align: justify;
-}
-
-
-.anuncio {
-    width: 100%;
-    height: 200px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
 }
 
 
@@ -709,58 +700,85 @@ footer .widget_title_text {
     border-radius: 50%;
 }
 
-.RedesSociais{
+
+.textskill{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    width: 60px;
+    color:#8257E5;
+    border-bottom: 1px solid #8257E5;
     
-    width: 100%;
    
-    height: 12rem;
-    
-   
-    display: flex;
-    
-    justify-content: center;
-    margin: 1.5rem 0 1.5rem 0;
 }
+
 
 .RedesSociais ul {
     
-    /* min-width: 53%; */
+   
+    background-color: rgb(248, 243, 243);
     max-width: 1000px;
     width: 100%;
-    height: 100%;
+    height: 20rem;
     gap: 50px;
-    text-decoration: none;
-    background-color: rgb(248, 243, 243);
-    
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
 .RedesSociais ul li {
     
     list-style: none;
-    background-color: #f2f1f5;
     height: 50%;
-    width: 100px;
+    width: 150px;
+    cursor: pointer;
+    box-shadow: rgba(121, 36, 155, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    
+}
+
+
+
+
+.RedesSociais ul li .skill1 {
+    background-color: #8257E5;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    cursor: pointer;
-    box-shadow: rgba(121, 36, 155, 0.35) 0px 5px 15px;
-}
-.RedesSociais ul li:hover{
-    background-color: #e9e7ec;
-    
-}
-
-
-.RedesSociais ul li a{
-    color: rgb(153, 24, 185);
-    list-style: none;
+    color: #fff;
     text-decoration: none;
-    
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+
+.RedesSociais ul li .skill2{
+    background-color: rgb(18, 65, 151);
+    width: 100%;
+    height: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: -10px;
+}
+
+
+
+.RedesSociais ul li a:hover{
+    background-color: rgb(32, 34, 32);
 }
