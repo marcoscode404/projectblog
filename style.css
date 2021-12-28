@@ -308,6 +308,9 @@ nav a:hover{
 .widget_title{
     margin-top: 30px;
     margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -441,6 +444,7 @@ article a{
 
 article .news_data{
     display: flex;
+   
     
 }
 
@@ -494,6 +498,7 @@ article .news_title{
     margin-bottom: 25px;
     color: #8257e5;
     font-size: 23px;
+    display: flex;
 }
 
 

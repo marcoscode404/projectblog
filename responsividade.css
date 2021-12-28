@@ -140,6 +140,10 @@
         height: 50%;
     }
    
+
+    .news_posted_at{
+        margin-left: 20px;
+    }
    
 
     .form .formulario {
@@ -252,22 +256,21 @@
     }
     article .news_thumnail{
         margin-top: 30px;
+        margin-left: 10px;
         width: 100%;
-        height: 300px;
-        
+        height: auto;
+        background-color: rgb(199, 42, 186);
+       
         
        
         
     }
     article .news_thumnail img{
         margin-top: 30px;
-
+        margin: 10px;
+        margin: auto;
         width: 90%;
         height: 60%;
-        margin: 10px;
-
-        width: 100%;
-        height: 100%;
         margin: 10px;
        
         
@@ -279,6 +282,20 @@
         padding: 10px;
 
         
+    }
+
+    .widget_title{
+       
+        align-items: center;
+    }
+    .news_data{
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+    .news_title{
+        align-items: center;
+        justify-content: center;
     }
 
     
