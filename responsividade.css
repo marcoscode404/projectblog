@@ -90,7 +90,9 @@
         width: 90%;
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
+        
     }
     .banner_headline h1{
         font-size: 3rem;
@@ -109,10 +111,16 @@
     .headline{
         display: flex;
         justify-content: center;
+        align-items: center;
+        width: 20rem;
+      
+        margin-bottom: 50px;
         
     }
     .headline img {
-        width: 20rem;
+        width: 90%;
+        height: 90%;
+
         
 
     }
