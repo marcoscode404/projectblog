@@ -10,6 +10,9 @@ html {
     scroll-behavior: smooth;
 }
 
+body{ 
+    background-color: rgb(41 109 203);
+}
 
 :root {
     --background-geral: #121214
@@ -24,7 +27,8 @@ html {
 .container{
     display: flex;
     justify-content: space-between;
-    width: 990px;
+    width: 1000px;
+    
    
 }
 /* configurações gerais */
@@ -222,24 +226,30 @@ nav a:hover{
 #geral{
     display: flex;
     justify-content: center;
-    background-color: #fafafaf3;
+    background-color: rgb(41 109 203);
     
 
 }
 
 #geral section{
     flex: 2;
+    background-color: rgb(248, 243, 243);
+    margin-bottom: 10px;
+    
     
 }
 
 #geral aside{
     flex: 1;
-    
+    background-color: rgb(248, 243, 243);
+    margin-bottom: 10px;
+    border-left: 1px solid rgb(212, 206, 206);
+    padding: 5px;
 }
 
 .news {
-    width: 100%;
-    height: 400px;
+    width: 97%;
+    height: 370px;
     background-color: #8257e5;
     margin: 75px 0px 22px 0px;
     border-radius: 8px;
@@ -319,13 +329,13 @@ nav a:hover{
     height: 20px;
     font-size: 21px;
     font-weight: bold;
-    margin-bottom: 100px;
+    margin: 0 7px 10px;
     
     
 }
 
 .widget_title_text ul {
-    height: 150px;
+    /* height: 150px; */
     width: 100%;
     display: flex;
     gap: 8px;
@@ -379,7 +389,7 @@ nav a:hover{
     
 }
 .caixas1{
-    width: 100%;
+    width: 97%;
     height: 18rem;
     margin-bottom: 15px;
     background-color: #8257e5;
@@ -391,9 +401,11 @@ nav a:hover{
     text-align: justify;
     color: rgb(73, 55, 55);
     font-weight: normal;
-    font-size: 15px;
-    margin-bottom: 50px;
+    font-size: 1rem;
+    margin-bottom: 2rem;
     font-family: serif;
+    background-color: rgb(212, 224, 38);
+    width: 97%;
 }
 
 
@@ -404,6 +416,7 @@ nav a:hover{
     margin-top: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid rgba(12, 9, 9, 0.342);
+    width: 97%;
     margin-bottom: 10px;
     
     
@@ -418,10 +431,21 @@ nav a:hover{
 .contato a{
     text-decoration: none;
     color: rgb(73, 55, 55);
+    color: #fff;
+   
 }
 
 .horario{
     color: rgb(75, 54, 54);
+    background-color: rgba(150, 59, 145, 0.808);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1px 1px 10px;
+    width: 95%;
+    height: 2.5rem;
+    color: #fff;
 }
 
 
@@ -447,6 +471,7 @@ article a{
 
 article .news_data{
     display: flex;
+    
    
     
 }
@@ -456,7 +481,7 @@ article .news_posted_at{
     color: #fff;
     font-size: 12px;
     padding: 10px;
-    margin-right: 2px;
+    margin-left: 7px;
 
 }
  
@@ -469,7 +494,7 @@ article .news_comments{
 }
 
 article .news_thumnail{
-    margin-top: 30px ;
+    margin: 30px 0px 0px 7px ;
     width: 100%;
     height: 450px;
     overflow: hidden;
@@ -497,8 +522,7 @@ article .news_thumnail img:hover {
 
 
 article .news_title{
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px 7px 25px 7px;
     color: #8257e5;
     font-size: 23px;
     display: flex;
@@ -509,7 +533,7 @@ article .news_resume{
     color: rgba(34, 17, 17, 0.582);
     line-height: 20px;
     font-size: 14px;
-    margin-bottom: 30px;
+    margin: 25px 7px 30px 7px;
     text-align: justify;
 }
 
@@ -520,19 +544,19 @@ article .news_resume{
         width: 100%;
         background-image: url(./images/skylab-mockup-background.png);
         background-repeat: no-repeat;
-        
         background-size: 100% 100%;
         height: 640px;
         display: flex;
         align-items: center;
         justify-content: center;
+       
         
     }
 
     .divform{
         height: 500px;
-        width: 61rem;
-        background-color: rgba(7, 12, 6, 0.459);
+        width: 62.5rem;
+        background-color: #262138;
     }
 
     .form .formulario{
@@ -710,8 +734,9 @@ footer .widget_title_text {
     margin-bottom: 10px;
     font-size: 1.5rem;
     width: 60px;
-    color:#8257E5;
-    border-bottom: 1px solid #8257E5;
+    color:#fff;
+    
+    border-bottom: 1px solid #fff;
     
    
 }
@@ -731,7 +756,8 @@ footer .widget_title_text {
     list-style: none;
     flex-wrap: wrap;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .RedesSociais ul li {
