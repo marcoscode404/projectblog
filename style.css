@@ -11,17 +11,18 @@ html {
 }
 
 body{ 
-    background-color: rgb(41 109 203);
+    background-color: var(--cor-background-azul);
 }
 
 :root {
-    --background-geral: #121214
+    --background-geral: #121214;
+    --cor-background-azul: #443170;
     --cor-branca: #fff;
     --cor-laranja: #e08e22;
     --cor-header: #202024;
     --cor-verde-escuro: rgb(45, 90, 31);
     --cor-text: #ece2e2;
-    --cor-text-azul: #36a9e1;
+   
     
 }
 .container{
@@ -38,9 +39,6 @@ header{
     justify-content: center;
     height: 5rem;
     background-color:  #8257E5;
-   
-    
-   
 }
 
 
@@ -234,7 +232,7 @@ nav a:hover{
 #geral{
     display: flex;
     justify-content: center;
-    background-color: rgb(41 109 203);
+    background-color: var(--cor-background-azul);
     
 
 }
