@@ -75,17 +75,18 @@
    
 
 
-    .socialMidia{
+    /* .socialMidia{
         display: none;
         
-    }
+    } */
     .banner_headline{
         
         width: 90vw;
         overflow: hidden;
         margin: auto;
-        margin-top: 50px;
+        margin-top: -30px;
         flex-direction: column;
+        justify-content: space-evenly;
     }
     .textBanner{
         
@@ -115,6 +116,7 @@
         justify-content: center;
         align-items: center;
         width: 20rem;
+        height: 20rem;
       
         margin-bottom: 50px;
         
