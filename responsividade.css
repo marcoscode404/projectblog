@@ -97,6 +97,11 @@
         flex-direction: column;
         
     }
+
+    .textBanner h2 {
+        text-align: center;
+    }
+
     .banner_headline h1{
         font-size: 3rem;
        
@@ -245,15 +250,16 @@
 
     .RedesSociais  {
         height: 400px;
-        flex-wrap:  wrap ;
+        flex-wrap:  wrap;
     }
-    .RedesSociais ul{
-        flex-direction: row;
-       
-        
-        width: 100%;
+    .socialMidias .alinks{
+       grid-template-columns: repeat(3,1fr);
         
     }
+    .RedesSociais ul {
+        margin: 10px;
+    }
+
     .RedesSociais ul li {
         height: 30%;
         width: 100px;
