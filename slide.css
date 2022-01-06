@@ -5,6 +5,9 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
+  background-color: rgba(49, 41, 37, 0.75);
+  margin-top: 20px;
+  margin-bottom: 20px;
   
 }
 
@@ -78,7 +81,7 @@
 }
 
 .active, .dot:hover {
-  background: #241f33;
+  background: rgba(242, 107, 53, 0.75);
 }
 
 /* Fading animation */

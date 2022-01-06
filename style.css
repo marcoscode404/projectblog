@@ -11,7 +11,8 @@ html {
 }
 
 body{ 
-    background-color: var(--cor-background-body);
+    /* background-color: var(--cor-background-body); */
+    background-color: #370B71;
 }
 
 :root {
@@ -22,7 +23,7 @@ body{
     --cor-header: #202024;
     --cor-verde-escuro: rgb(45, 90, 31);
     --cor-text: #ece2e2;
-   
+    --cor-background-skill: #8257E5;
     
 }
 .container{
@@ -137,9 +138,10 @@ nav a:hover{
 }
 
 .textBanner h1{
-    color: #fff;
+    color: rgb(238, 234, 20);
     font-size: 56px;
     max-width: 390px;
+    text-shadow: rgba(191, 15, 226, 0.623) -2px -3px 2px;
     
 }
 
@@ -157,14 +159,15 @@ nav a:hover{
 
 .headline {
    
-    width: 25rem;
-    height: 25rem;
+    width: 28rem;
+    height: 28rem;
 }
 .headline img {
     width: 90%;
     height: 90%;
     border-radius: 50%;
-    border-bottom: 1px solid #9cb125;
+    border-top: 1.7px solid green;
+    border-bottom: 1.5px solid #abc51a;
     box-shadow: rgb(10, 14, 19) 0px 20px 30px -10px;
 }
 
@@ -235,7 +238,7 @@ nav a:hover{
 #geral{
     display: flex;
     justify-content: center;
-    background-color: var(--cor-background-body);
+    /* background-color: var(--cor-background-body); */
     
 
 }
@@ -771,9 +774,9 @@ footer .widget_title_text {
     
     margin-top: 30px;
     margin-bottom: 10px;
-    font-size: 1.5rem;
-    width: 60px;
-    color:#fff;
+    font-size: 1.9rem;
+    width: 75px;
+    color:rgb(238, 234, 20);
     
     border-bottom: 1px solid #fff;
     
@@ -781,71 +784,85 @@ footer .widget_title_text {
 }
 
 .RedesSociais {
+    height: 20rem;
     max-width: 1000px;
     margin: auto;
-}
-
-.RedesSociais ul {
-    background-color: rgba(201, 180, 218, 0.226);
-   
+    background-color: rgba(242, 107, 53, 0.75);
     
-    height: 20rem;
-    gap: 50px;
+    
+    margin-bottom: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-    margin-bottom: 2.5rem;
-   
-  
+}
+
+.RedesSociais ul {
+    
+    width: 90%;
+    height: 90%;
+    background-color: rgba(204, 191, 206, 0.171);
+    border-radius: 8px;
+ 
+    display: grid;
+    
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    grid-gap: 8px;
+    
 }
 
 .RedesSociais ul li {
-    
+    width: 90%;
+    height: 12rem;
     list-style: none;
-    height: 50%;
-    width: 150px;
+    margin: 50px 10px;
     cursor: pointer;
     box-shadow: rgba(121, 36, 155, 0.35) 0px 5px 15px;
     border-radius: 8px;
+
     
 }
 
 
 
 .RedesSociais ul li .skill1 {
-    background-color: var(--cor-background-body);
+    background-color: var(--cor-background-skill);
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+    align-items: center;
+    /* justify-content: space-between; */
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+.RedesSociais ul li .skill1 img {
+    width: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.RedesSociais ul li .skill1 span{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    flex-direction: column;
-    gap: 5px;
-   
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 0px;
+    background-color: rgba(48, 56, 12, 0.315);
+    color: rgb(241, 226, 14);
+    font-size: 1.2rem;
 }
-
-.RedesSociais ul li .skill2{
-    background-color: #8257E5;
-    width: 100%;
-    height: 110%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: -10px;
-}
-
 
 
 .RedesSociais ul li a:hover{

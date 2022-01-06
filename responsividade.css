@@ -257,12 +257,14 @@
         
     }
     .RedesSociais ul {
+        grid-template-columns: repeat(2,1fr);
         margin: 10px;
     }
 
     .RedesSociais ul li {
-        height: 30%;
-        width: 100px;
+        height: 150px;
+        width: 95%;
+        margin: 10px 5px;
     }
     .RedesSociais ul li a {
         font-size: 0.8rem;
@@ -331,6 +333,15 @@
     .news_title{
         align-items: center;
         justify-content: center;
+    }
+
+    .RedesSociais {
+        height: 100%;
+        margin: 10px;
+    }
+    .RedesSociais ul {
+        grid-template-columns: repeat(1,1fr);
+        margin: 10px;
     }
 
     
