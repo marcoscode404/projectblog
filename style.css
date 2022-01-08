@@ -93,7 +93,8 @@ nav a{
 }
 
 nav a:hover{
-    color: rgb(182, 182, 182);
+    color: rgba(243, 75, 9, 0.904);
+  
     
 }
 
@@ -165,9 +166,7 @@ nav a:hover{
 .headline img {
     width: 90%;
     height: 90%;
-    border-radius: 50%;
-    border-top: 1.7px solid green;
-    border-bottom: 1.5px solid #abc51a;
+    border-radius: 50%;  
     box-shadow: rgb(10, 14, 19) 0px 20px 30px -10px;
 }
 
@@ -179,10 +178,26 @@ nav a:hover{
 }
 
 .audio{
- 
+   width: 270px; 
    height: 50px;
    
 }
+
+.git{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(22, 9, 9);
+    width: 270px;
+    height: 50px;
+    margin-bottom: 7px;
+    color: #fff;
+    gap: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
 
 .btn-Curriculum{
     display: flex;
