@@ -72,20 +72,12 @@
     }   
 
 
-   
-
-
-    /* .socialMidia{
-        display: none;
-        
-    } */
     .banner_headline{
         
         width: 90vw;
         overflow: hidden;
         margin: auto;
-        margin-top: -30px;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-evenly;
     }
     .textBanner{
@@ -123,7 +115,7 @@
         width: 20rem;
         height: 20rem;
       
-        margin-bottom: 50px;
+    
         
     }
     .headline img {
@@ -181,19 +173,14 @@
         max-width: 400px;
     }
    
-    
-
     .caixas{
         flex-direction: column;
         width: 100%;
         max-width: 400px;
         margin-left: 5px;
-
     }
     .caixas1{
-
-        width: 100%;
-        
+        width: 100%; 
     }
 
     /* FOOTER */
@@ -212,8 +199,6 @@
     }
 
    
-
-
 
     .whatshap-fixo{
         margin-left: 70vw;
